@@ -27,7 +27,6 @@ class Engine :
         self.game_map.render(console)
 
         for entity in self.entities :
-            print(entity, entity.x, entity.y)
             console.print(entity.x, entity.y, entity.char, entity.color)
         
         context.present(console)
